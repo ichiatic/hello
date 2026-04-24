@@ -59,6 +59,75 @@ export default function Home() {
           </div>
         </div>
       </section>
+      {/* Pricing Preview Section */}
+      <section id="memberships" className="bg-zinc-900 px-6 py-24">
+        <div className="mx-auto max-w-6xl">
+          <h2 className="text-center text-4xl font-bold tracking-tight sm:text-5xl">
+            Simple pricing. No contracts.
+          </h2>
+          <p className="mx-auto mt-4 max-w-2xl text-center text-zinc-400">
+            Every plan includes full access to the pool, courts, turf, sauna, and 60+ weekly classes.
+          </p>
+
+          <div className="mt-16 grid gap-6 md:grid-cols-3">
+            {/* Basic */}
+            <div className="rounded-2xl border border-white/10 bg-zinc-950 p-8">
+              <h3 className="text-xl font-semibold">Student</h3>
+              <p className="mt-2 text-sm text-zinc-400">Ages 13-22, valid ID required</p>
+              <div className="mt-6">
+                <span className="text-5xl font-bold">$29.99</span>
+                <span className="text-zinc-400">/mo</span>
+              </div>
+              <ul className="mt-8 space-y-3 text-sm text-zinc-300">
+                <li>• 24/7 gym access</li>
+                <li>• All amenities included</li>
+                <li>• Unlimited group classes</li>
+                <li>• No contract, cancel anytime</li>
+              </ul>
+            </div>
+
+            {/* Featured: Adult */}
+            <div className="relative rounded-2xl border-2 border-blue-500 bg-zinc-950 p-8">
+              <div className="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-blue-500 px-4 py-1 text-xs font-semibold uppercase tracking-wide">
+                Most Popular
+              </div>
+              <h3 className="text-xl font-semibold">Adult</h3>
+              <p className="mt-2 text-sm text-zinc-400">Full single membership</p>
+              <div className="mt-6">
+                <span className="text-5xl font-bold">$45.99</span>
+                <span className="text-zinc-400">/mo</span>
+              </div>
+              <ul className="mt-8 space-y-3 text-sm text-zinc-300">
+                <li>• 24/7 gym access</li>
+                <li>• All amenities included</li>
+                <li>• Unlimited group classes</li>
+                <li>• Guest passes included</li>
+                <li>• No contract, cancel anytime</li>
+              </ul>
+            </div>
+
+            {/* Family */}
+            <div className="rounded-2xl border border-white/10 bg-zinc-950 p-8">
+              <h3 className="text-xl font-semibold">Family</h3>
+              <p className="mt-2 text-sm text-zinc-400">2 adults + up to 4 kids</p>
+              <div className="mt-6">
+                <span className="text-5xl font-bold">$79.99</span>
+                <span className="text-zinc-400">/mo</span>
+              </div>
+              <ul className="mt-8 space-y-3 text-sm text-zinc-300">
+                <li>• 24/7 gym access for all</li>
+                <li>• Kids programs included</li>
+                <li>• All amenities + classes</li>
+                <li>• No contract, cancel anytime</li>
+              </ul>
+            </div>
+          </div>
+
+          <p className="mt-12 text-center text-sm text-zinc-500">
+            No sign-up fees. No commitments. Cancel anytime with 30 days notice.
+          </p>
+        </div>
+      </section>
     </main>
   );
 }
