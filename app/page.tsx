@@ -1,8 +1,27 @@
 export default function Home() {
   return (
     <main className="min-h-screen bg-zinc-950 text-white">
+      {/* Navigation */}
+      <nav className="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-zinc-950/70 border-b border-white/5">
+        <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
+          <a href="#" className="text-lg font-bold tracking-tight">
+            310 <span className="text-blue-500">Fitness</span>
+          </a>
+          <div className="hidden items-center gap-8 sm:flex">
+            <a href="#memberships" className="text-sm text-zinc-300 transition-colors hover:text-white">
+              Pricing
+            </a>
+            <a href="#visit" className="text-sm text-zinc-300 transition-colors hover:text-white">
+              Visit
+            </a>
+            <a href="#visit" className="rounded-lg bg-blue-600 px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-blue-500">
+              Book a Tour
+            </a>
+          </div>
+        </div>
+      </nav>
       {/* Hero Section */}
-      <section className="relative flex min-h-[90vh] items-center justify-center overflow-hidden px-6">
+      <section className="relative flex min-h-screen pt-16 items-center justify-center overflow-hidden px-6">
         {/* Placeholder background — will be replaced with a real gym photo */}
         <div className="absolute inset-0 bg-gradient-to-br from-blue-950 via-zinc-950 to-black" />
 
