@@ -59,6 +59,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+
       {/* Pricing Preview Section */}
       <section id="memberships" className="bg-zinc-900 px-6 py-24">
         <div className="mx-auto max-w-6xl">
@@ -70,7 +71,7 @@ export default function Home() {
           </p>
 
           <div className="mt-16 grid gap-6 md:grid-cols-3">
-            {/* Basic */}
+            {/* Student */}
             <div className="rounded-2xl border border-white/10 bg-zinc-950 p-8">
               <h3 className="text-xl font-semibold">Student</h3>
               <p className="mt-2 text-sm text-zinc-400">Ages 13-22, valid ID required</p>
@@ -126,6 +127,66 @@ export default function Home() {
           <p className="mt-12 text-center text-sm text-zinc-500">
             No sign-up fees. No commitments. Cancel anytime with 30 days notice.
           </p>
+        </div>
+      </section>
+
+      {/* Visit Section */}
+      <section id="visit" className="px-6 py-24">
+        <div className="mx-auto max-w-6xl">
+          <div className="grid gap-12 md:grid-cols-2 md:items-center">
+            {/* Left: copy */}
+            <div>
+              <h2 className="text-4xl font-bold tracking-tight sm:text-5xl">
+                Come see it for yourself.
+              </h2>
+              <p className="mt-6 text-lg text-zinc-300">
+                Walk the floor. Jump in the pool. Test a class. You won&apos;t know if it&apos;s right for you until you&apos;re in the building.
+              </p>
+
+              <div className="mt-10 space-y-6">
+                <div>
+                  <h3 className="text-sm font-semibold uppercase tracking-wide text-blue-400">
+                    Address
+                  </h3>
+                  <p className="mt-2 text-zinc-300">
+                  4190 White Sage Arc, Las Cruces, NM 88011<br />
+                    Las Cruces, NM 88011
+                  </p>
+                </div>
+
+                <div>
+                  <h3 className="text-sm font-semibold uppercase tracking-wide text-blue-400">
+                    Hours
+                  </h3>
+                  <p className="mt-2 text-zinc-300">
+                    Open 24/7 for members<br />
+                    Front desk: Mon-Fri 5am-12pm, Sat-Sun 6am-8pm
+                  </p>
+                </div>
+
+                <div>
+                  <h3 className="text-sm font-semibold uppercase tracking-wide text-blue-400">
+                    Phone
+                  </h3>
+                  <p className="mt-2 text-zinc-300">(575) 524-2447</p>
+                </div>
+              </div>
+
+              <div className="mt-10">
+                <a
+                  href="#"
+                  className="inline-block rounded-lg bg-blue-600 px-8 py-4 text-base font-semibold text-white transition-colors hover:bg-blue-500"
+                >
+                  Book a Free Tour
+                </a>
+              </div>
+            </div>
+
+            {/* Right: map placeholder */}
+            <div className="aspect-square rounded-2xl border border-white/10 bg-zinc-900 flex items-center justify-center">
+              <p className="text-sm text-zinc-500">Map embed coming</p>
+            </div>
+          </div>
         </div>
       </section>
     </main>
