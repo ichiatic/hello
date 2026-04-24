@@ -20,6 +20,7 @@ export default function Home() {
           </div>
         </div>
       </nav>
+
       {/* Hero Section */}
       <section className="relative flex min-h-screen pt-16 items-center justify-center overflow-hidden px-6">
         {/* Placeholder background — will be replaced with a real gym photo */}
@@ -168,7 +169,7 @@ export default function Home() {
                     Address
                   </h3>
                   <p className="mt-2 text-zinc-300">
-                  4190 White Sage Arc, Las Cruces, NM 88011<br />
+                    4190 White Sage Arc<br />
                     Las Cruces, NM 88011
                   </p>
                 </div>
@@ -192,10 +193,7 @@ export default function Home() {
               </div>
 
               <div className="mt-10">
-                <a
-                  href="#"
-                  className="inline-block rounded-lg bg-blue-600 px-8 py-4 text-base font-semibold text-white transition-colors hover:bg-blue-500"
-                >
+                <a href="#" className="inline-block rounded-lg bg-blue-600 px-8 py-4 text-base font-semibold text-white transition-colors hover:bg-blue-500">
                   Book a Free Tour
                 </a>
               </div>
@@ -208,6 +206,57 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Footer */}
+      <footer className="border-t border-white/10 bg-zinc-950 px-6 py-12">
+        <div className="mx-auto max-w-6xl">
+          <div className="grid gap-8 md:grid-cols-4">
+            <div>
+              <p className="text-lg font-bold tracking-tight">
+                310 <span className="text-blue-500">Fitness</span>
+              </p>
+              <p className="mt-3 text-sm text-zinc-400">
+                Las Cruces&apos; home for training, recovery, and community.
+              </p>
+            </div>
+
+            <div>
+              <h4 className="text-sm font-semibold uppercase tracking-wide text-zinc-400">
+                Explore
+              </h4>
+              <ul className="mt-3 space-y-2 text-sm">
+                <li><a href="#memberships" className="text-zinc-300 hover:text-white">Pricing</a></li>
+                <li><a href="#visit" className="text-zinc-300 hover:text-white">Visit</a></li>
+                <li><a href="#" className="text-zinc-300 hover:text-white">Classes</a></li>
+              </ul>
+            </div>
+
+            <div>
+              <h4 className="text-sm font-semibold uppercase tracking-wide text-zinc-400">
+                Connect
+              </h4>
+              <ul className="mt-3 space-y-2 text-sm">
+                <li><a href="#" className="text-zinc-300 hover:text-white">Instagram</a></li>
+                <li><a href="#" className="text-zinc-300 hover:text-white">Facebook</a></li>
+                <li><a href="#" className="text-zinc-300 hover:text-white">Contact</a></li>
+              </ul>
+            </div>
+
+            <div>
+              <h4 className="text-sm font-semibold uppercase tracking-wide text-zinc-400">
+                Hours
+              </h4>
+              <p className="mt-3 text-sm text-zinc-300">
+                Open 24/7 for members
+              </p>
+            </div>
+          </div>
+
+          <div className="mt-12 border-t border-white/10 pt-6 text-center text-xs text-zinc-500">
+            © 2026 310 Fitness. All rights reserved.
+          </div>
+        </div>
+      </footer>
     </main>
   );
 }
